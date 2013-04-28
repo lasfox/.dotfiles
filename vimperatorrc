@@ -1,0 +1,16 @@
+noremap gm :tabopen mail.google.com
+noremap gr :tabopen www.google.com/reader
+noremap gc :tabopen www.google.com/calendar
+noremap gf :tabopen www.google.com.hk/finance?hl=zh-cn&tab=we
+noremap wb :tabopen weibo.com/lasfox
+noremap mi :tabopen jira.allyes.com/secure/IssueNavigator.jspa?sorter/field=issuekey&sorter/order=DESC
+noremap gl :tabopen 10.28.255.11/?m=disk_free&r=hour&s=descending&hc=4&mc=2
+noremap <leader>tx :tabopen xbeta.info
+noremap <leader>te :tabopen xbeta.info/wp-admin
+noremap = +
+noremap nb :tabopen www.nbd.com.cn
+noremap ft :tabopen www.ftchinese.com
+:map J <C-d>
+:map K <C-u>
+:set gui=none
+:set gui=menu,tabs,navigation

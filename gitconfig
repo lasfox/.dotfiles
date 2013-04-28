@@ -1,0 +1,20 @@
+[user]
+	name = anson lee
+	email = anson_li@allyes.com
+[difftool "bc3"]
+	cmd = /opt/tools/bc3.sh
+[difftool "meld"]
+	cmd = /opt/tools/meld.py
+[diff]
+	tool = meld
+	external = /opt/tools/meld.py
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[credential]
+	helper = cache --timeout=3600

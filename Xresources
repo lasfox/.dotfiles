@@ -1,0 +1,59 @@
+
+!!XTerm*faceName: ProggyCleanTTSZ
+!!xterm*faceName: Monospace
+xterm*faceName: Monaco
+xterm*faceNameDoublesize: WenQuanYi MicroHei Mono
+xterm*faceSize: 11
+xterm*loginShell: true
+xterm*vt100*geometry: 80x24
+xterm*saveLines: 5000
+xterm*termName: xterm-256color
+xterm*boldMode: true
+!!xterm*cjkWidth:true
+xterm*cursorBlink:true
+
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48
+
+xterm*eightBitInput: false
+
+!!xterm*foreground: rgb:a8/a8/a8
+xterm*foreground: rgb:ff/ff/ff
+xterm*background: rgb:00/00/00
+
+xterm*color0: rgb:00/00/00
+xterm*color1: rgb:cc/00/00
+xterm*color2: rgb:4e/9a/06
+xterm*color3: rgb:c4/a0/00
+xterm*color4: rgb:34/65/a4
+xterm*color5: rgb:75/50/7b
+xterm*color6: rgb:06/98/9a
+xterm*color7: rgb:d3/d7/cf
+xterm*color8: rgb:55/57/53
+xterm*color9: rgb:ef/29/29
+xterm*color10: rgb:8a/e2/34
+xterm*color11: rgb:fc/e9/4f
+xterm*color12: rgb:72/9f/cf
+xterm*color13: rgb:ad/7f/a8
+xterm*color14: rgb:34/e2/e2
+xterm*color15: rgb:ee/ee/ec
+
+!!xterm*colorBDMode: true
+!!xterm*colorBD: rgb:fc/fc/fc
+
+
+XTerm*VT100.translations: #override \
+<Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)\n\
+Ctrl <Key>y: insert-selection(CLIPBOARD)
+
+
+!! XTerm*VT100.translations: #override \
+!! Ctrl <Key>n: scroll-forw(1,line) \n\
+!! Ctrl <Key>p: scroll-back(1,line) \n\
+!! Ctrl <Key>v: scroll-forw(1,page) \n\
+!! Alt <Key>v: scroll-back(1,page)
+
+*VT100*translations: #override \n\
+Shift <KeyPress> Insert:insert-selection(CLIPBOARD, CUT_BUFFER1) \n\
+~Shift~Ctrl<Btn2Up>: insert-selection(PRIMARY, CUT_BUFFER0) \n\
+~Shift<BtnUp>: select-end(CLIPBOARD, CUT_BUFFER1) \n\
+~Shift<BtnUp>: select-end(PRIMARY, CUT_BUFFER0)
